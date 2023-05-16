@@ -24,7 +24,7 @@ html, body {
 .cabecalho {
     display: flex;
     background-color: var(--roxo-escuro-3);
-    height: 20vh;
+    height: 15vh;
     justify-content: center;
     align-items: center;
 }
@@ -32,4 +32,36 @@ html, body {
 .cabecalho h1 {
     font-size: 2em;
     font-weight: bolder;
+}
+
+.container {
+    position: relative;
+    height: 85vh;
+    background-color: var(--roxo-base);
+    max-width: 900px;
+    margin: auto;
+}
+
+img {
+    width: 100px;
+}
+
+.gato {
+    position: absolute;
+    bottom: 20%;
+    right: 30%;
+}
+
+.pato {
+    position: absolute;
+    width: 60px;
+    top: 30%;
+    left: 20%;
+    
+	animation: animacao-pato 2s infinite linear;
+}
+
+@keyframes animacao-pato {
+    from {left: 20%;}
+    to {left: 50%}
 }
