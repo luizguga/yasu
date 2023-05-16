@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Emilys+Candy&family=Faster+One&family=Passion+One&family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    color: white;
+    background-color: var(--roxo-claro);
+    height: 100vh;
+    font-family: 'Emilys Candy', cursive;
+}
+
+:root {
+    --roxo-base: #7201b5;
+    --roxo-claro: #903CC1;
+    --roxo-escuro-1: #530182;
+    --roxo-escuro-2: #281136;
+    --roxo-escuro-3: #220136;
+}
+
+.cabecalho {
+    display: flex;
+    background-color: var(--roxo-escuro-3);
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.cabecalho h1 {
+    font-size: 2em;
+    font-weight: bolder;
+}
