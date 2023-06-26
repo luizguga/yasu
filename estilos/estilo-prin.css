@@ -21,9 +21,17 @@ html, body {
     --roxo-escuro-3: #220136;
 }
 
+.container {
+    display: grid;
+    grid-template-rows: 15vh 85vh;
+    box-sizing: border-box;
+    background-image: linear-gradient(to bottom, var(--roxo-escuro-2), var(--roxo-escuro-1));
+    max-width: 900px;
+    margin: auto;
+}
+
 .cabecalho {
     display: flex;
-    background-color: var(--roxo-escuro-3);
     height: 15vh;
     justify-content: center;
     align-items: center;
@@ -34,34 +42,77 @@ html, body {
     font-weight: bolder;
 }
 
-.container {
+.img {
     position: relative;
-    height: 85vh;
-    background-color: var(--roxo-base);
-    max-width: 900px;
-    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-img {
-    width: 100px;
+.base {
+    position: absolute;
+    top: 40%;
+    width: 30px;
+}
+
+.coracao-a {
+    animation: animacao-cor 1.5s infinite ease-out;
+}
+
+.coracao-b {
+    left: 37%;
+    animation: animacao-cor 1.5s .6s infinite ease-out;
+}
+
+.coracao-c {
+    right: 37%;
+    animation: animacao-cor 1.5s .9s infinite ease-out;
 }
 
 .gato {
-    position: absolute;
-    bottom: 20%;
-    right: 30%;
+    display: block;
+    box-sizing: border-box;
+	animation: animacao-cat 3s infinite ease-out;
+    width: 310px;
 }
 
-.pato {
+.base-pato {
     position: absolute;
-    width: 60px;
-    top: 30%;
-    left: 20%;
-    
-	animation: animacao-pato 2s infinite linear;
+    bottom: 10px;
+    width: 120px;
+}
+
+img.pato-a {
+    left: 0;
+    animation: animacao-pato 1s infinite linear;
+}
+
+@keyframes animacao-cor {
+    0% {
+        display: block;
+    }
+    100% {
+        top: 0;
+        transform: scale(2);
+        display: none;
+    }
+}
+
+@keyframes animacao-cat {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.1);}
+    100% {transform: scale(1);}
 }
 
 @keyframes animacao-pato {
-    from {left: 20%;}
-    to {left: 50%}
+    0%{
+        display: block;
+        left: 0;
+    }
+    50% {
+        left: 100%;
+    }
+    100% {
+        left: 0;
+    }
 }
