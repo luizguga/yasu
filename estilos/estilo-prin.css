@@ -47,6 +47,7 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .base {
@@ -60,12 +61,12 @@ html, body {
 }
 
 .coracao-b {
-    left: 37%;
+    left: 50%;
     animation: animacao-cor 1.5s .6s infinite ease-out;
 }
 
 .coracao-c {
-    right: 37%;
+    right: 50%;
     animation: animacao-cor 1.5s .9s infinite ease-out;
 }
 
@@ -73,7 +74,7 @@ html, body {
     display: block;
     box-sizing: border-box;
 	animation: animacao-cat 3s infinite ease-out;
-    width: 310px;
+    width: 80%;
 }
 
 .base-pato {
@@ -102,4 +103,16 @@ img.pato-a {
     0% {transform: scale(1);}
     50% {transform: scale(1.1);}
     100% {transform: scale(1);}
+}
+
+@media screen and (min-width: 575px){
+    .gato {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 770px) {
+    .gato {
+        width: 50%;
+    }
 }
