@@ -116,3 +116,12 @@ img.pato-a {
         width: 50%;
     }
 }
+
+@media screen and (height: 480px) {
+    html,body {
+        height: auto;
+    }
+    .gato {
+        height: 40%;
+    }
+}
