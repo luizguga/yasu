@@ -8,9 +8,9 @@
 }
 html, body {
     color: white;
-    background-color: var(--roxo-claro);
     height: 100vh;
     font-family: 'Emilys Candy', cursive;
+    background-image: linear-gradient(to bottom, var(--roxo-escuro-2), var(--roxo-escuro-1));
 }
 
 :root {
