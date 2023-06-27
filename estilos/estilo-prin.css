@@ -119,6 +119,6 @@ img.pato-a {
 
 @media screen and (height: 480px) {
     .gato {
-        height: 30%;
+        width: 20%;
     }
 }
