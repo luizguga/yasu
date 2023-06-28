@@ -6,12 +6,12 @@
     margin: 0;
     padding: 0;
 }
-html, body {
+body {
     color: white;
     font-family: 'Emilys Candy', cursive;
     background-image: linear-gradient(to bottom, var(--roxo-escuro-2), var(--roxo-escuro-1));
     background-attachment: fixed;
-    height: 100vh;
+    height: 100%;
 }
 
 :root {
