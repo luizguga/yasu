@@ -26,6 +26,7 @@ function janela(){
     let imgPatoUm = document.createElement('img');
     imgPatoUm.setAttribute('class', 'pato-a')
     imgPatoUm.src = 'imagens/pato-1.png';
+    imgPatoUm.style.display = 'block';
     imgPatoUm.style.position = 'absolute';
     imgPatoUm.style.top = '0';
     imgPatoUm.style.left = '0';
@@ -34,6 +35,7 @@ function janela(){
     let imgPatoDois = document.createElement('img');
     imgPatoDois.setAttribute('class', 'pato-b');
     imgPatoDois.src = 'imagens/pato-2.png';
+    imgPatoDois.style.display = 'block';
     imgPatoDois.style.position = 'absolute';
     imgPatoDois.style.top = '0';
     imgPatoDois.style.right = '0';
