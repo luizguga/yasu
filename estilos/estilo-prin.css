@@ -11,7 +11,7 @@ html, body {
     font-family: 'Emilys Candy', cursive;
     background-image: linear-gradient(to bottom, var(--roxo-escuro-2), var(--roxo-escuro-1));
     background-attachment: fixed;
-    height: 100vh;
+    height: 100%;
 }
 
 :root {
