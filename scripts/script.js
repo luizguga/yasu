@@ -32,7 +32,7 @@ function janela(){
     divDentro.appendChild(imgPatoUm);
 
     let imgPatoDois = document.createElement('img');
-    imgPatoDois.setAttribute('class', 'pato-b')
+    imgPatoDois.setAttribute('class', 'pato-b');
     imgPatoDois.src = 'imagens/pato-2.png';
     imgPatoDois.style.position = 'absolute';
     imgPatoDois.style.top = '0';

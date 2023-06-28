@@ -77,10 +77,15 @@ body {
 
 .pato-a, .pato-b {
     width: 100px;
+    margin: 10px;
 }
 
 .pato-a {
-    animation: animacao-pato-a 3s infinite linear;
+    animation: animacao-pato-a 2.5s infinite linear;
+}
+
+.pato-b {
+    animation: animacao-pato-b 2.5s infinite linear;
 }
 
 @keyframes animacao-cor {
@@ -103,20 +108,36 @@ body {
 @keyframes animacao-pato-a {
     0% {
         transform: rotate(0deg) translate(0px, 0px);
-        left: 0;
     }
     25% {
-        transform: rotate(3deg) translate(3px, -8px);
-        left: 25vw;
+        transform: rotate(5deg) translate(0px, -5px);
+    }
+    50% {
+        transform: rotate(0deg) translate(0px, 0px);
     }
     75% {
-        transform: rotate(-3deg) translate(6px, 8px);
-        left: 75vw;
+        transform: rotate(-5deg) translate(0px, 5px);
     }
     100% {
-        transform: rotate(0deg) translate(9px, 0px);
-        left: 85vw;
-        display: none;
+        transform: rotate(0deg) translate(0px, 0px);
+    }
+}
+
+@keyframes animacao-pato-b {
+    0% {
+        transform: rotate(0deg) translate(0px, 0px);
+    }
+    25% {
+        transform: rotate(-5deg) translate(0px, -5px);
+    }
+    50% {
+        transform: rotate(0deg) translate(0px, 0px);
+    }
+    75% {
+        transform: rotate(5deg) translate(0px, 5px);
+    }
+    100% {
+        transform: rotate(0deg) translate(0px, 0px);
     }
 }
 
@@ -165,9 +186,10 @@ body {
     }
     .pato-a, .pato-b {
         width: 150px;
-        padding: 20px 20px;
+        margin: 20px;
     }
     .mensagem {
+        margin-top: 150px;
         font-size: 2.5em;
     }
 }
