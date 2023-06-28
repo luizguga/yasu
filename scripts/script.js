@@ -20,16 +20,30 @@ function janela(){
     divDentro.style.height = '100%';
     divDentro.style.display = 'flex';
     divDentro.style.justifyContent = 'center';
-    divDentro.style.alignItems = 'center';
+    divDentro.style.alignItems = 'start';
     div.appendChild(divDentro);
 
     let imgPatoUm = document.createElement('img');
+    imgPatoUm.setAttribute('class', 'pato-a')
     imgPatoUm.src = 'imagens/pato-1.png';
     imgPatoUm.style.position = 'absolute';
+    imgPatoUm.style.top = '0';
+    imgPatoUm.style.left = '0';
+    divDentro.appendChild(imgPatoUm);
+
+    let imgPatoDois = document.createElement('img');
+    imgPatoDois.setAttribute('class', 'pato-b')
+    imgPatoDois.src = 'imagens/pato-2.png';
+    imgPatoDois.style.position = 'absolute';
+    imgPatoDois.style.top = '0';
+    imgPatoDois.style.right = '0';
+    divDentro.appendChild(imgPatoDois);
 
     let secao = document.createElement('section');
-    secao.style.width = '60%';
-    secao.style.textAlign = 'justify';
+    secao.setAttribute('class', 'mensagem');
+    secao.style.width = '70vw';
+    secao.style.textAlign = 'center';
+    secao.style.marginTop = '120px';
     divDentro.appendChild(secao);
 
     let para1 = document.createElement('p');

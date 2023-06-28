@@ -26,7 +26,7 @@ body {
     display: grid;
     grid-template-rows: 10vh 90vh;
     box-sizing: border-box;
-    max-width: 900px;
+    max-width: 320px;
     margin: auto;
 }
 
@@ -75,6 +75,14 @@ body {
     width: 320px;
 }
 
+.pato-a, .pato-b {
+    width: 100px;
+}
+
+.pato-a {
+    animation: animacao-pato-a 3s infinite linear;
+}
+
 @keyframes animacao-cor {
     0% {
         display: block;
@@ -92,23 +100,74 @@ body {
     100% {transform: scale(.9);}
 }
 
+@keyframes animacao-pato-a {
+    0% {
+        transform: rotate(0deg) translate(0px, 0px);
+        left: 0;
+    }
+    25% {
+        transform: rotate(3deg) translate(3px, -8px);
+        left: 25vw;
+    }
+    75% {
+        transform: rotate(-3deg) translate(6px, 8px);
+        left: 75vw;
+    }
+    100% {
+        transform: rotate(0deg) translate(9px, 0px);
+        left: 85vw;
+        display: none;
+    }
+}
+
 @media screen and (min-width: 375px){
     .cabecalho h1 {
         font-size: 2em;
     }
+    .container {
+        min-width: 375px;
+    }
     .gato {
         min-width: 375px;
+    }
+    .pato-a, .pato-b {
+        width: 100px;
     }
 }
 
 @media screen and (min-width: 425px) {
+    .container {
+        min-width: 425px;
+    }
     .gato {
         min-width: 425px;
+    }
+    .pato-a, .pato-b {
+        width: 100px;
     }
 }
 
 @media screen and (min-width: 768px) {
+    .container {
+        min-width: 768px;
+    }
     .gato {
         min-width: 500px;
+    }
+    .pato-a, .pato-b {
+        width: 150px;
+    }
+}
+
+@media screen and (min-width:900px){
+    .container {
+        max-width: 900px;
+    }
+    .pato-a, .pato-b {
+        width: 150px;
+        padding: 20px 20px;
+    }
+    .mensagem {
+        font-size: 2.5em;
     }
 }
