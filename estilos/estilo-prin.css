@@ -110,13 +110,13 @@ body {
         transform: rotate(0deg) translate(0px, 0px);
     }
     25% {
-        transform: rotate(5deg) translate(0px, -5px);
+        transform: rotate(5deg) translate(0px, 5px);
     }
     50% {
         transform: rotate(0deg) translate(0px, 0px);
     }
     75% {
-        transform: rotate(-5deg) translate(0px, 5px);
+        transform: rotate(-5deg) translate(0px, -5px);
     }
     100% {
         transform: rotate(0deg) translate(0px, 0px);
@@ -128,13 +128,13 @@ body {
         transform: rotate(0deg) translate(0px, 0px);
     }
     25% {
-        transform: rotate(-5deg) translate(0px, -5px);
+        transform: rotate(-5deg) translate(0px, 5px);
     }
     50% {
         transform: rotate(0deg) translate(0px, 0px);
     }
     75% {
-        transform: rotate(5deg) translate(0px, 5px);
+        transform: rotate(5deg) translate(0px, -5px);
     }
     100% {
         transform: rotate(0deg) translate(0px, 0px);
