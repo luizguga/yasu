@@ -65,7 +65,7 @@ body {
 
 .coracao-c {
     right: 50%;
-    animation: animacao-cor 1.5s .9s infinite ease-out;
+    animation: animacao-cor 1.5s 1s infinite ease-out;
 }
 
 .gato {
@@ -89,7 +89,7 @@ body {
 }
 
 .mensagem {
-    margin-top: 100px;
+    margin-top: 120px;
     font-size: 1.7em;
 }
 
@@ -160,7 +160,7 @@ body {
         width: 100px;
     }
     .mensagem {
-        margin-top: 100px;
+        margin-top: 120px;
         font-size: 1.8em;
     }
 }
@@ -176,7 +176,7 @@ body {
         width: 100px;
     }
     .mensagem {
-        margin-top: 100px;
+        margin-top: 120px;
         font-size: 1.9em;
     }
 }
@@ -190,9 +190,10 @@ body {
     }
     .pato-a, .pato-b {
         width: 150px;
+        margin: 20px;
     }
     .mensagem {
-        margin-top: 150px;
+        margin-top: 170px;
         font-size: 2em;
     }
 }
@@ -206,7 +207,7 @@ body {
         margin: 20px;
     }
     .mensagem {
-        margin-top: 150px;
+        margin-top: 170px;
         font-size: 2.5em;
     }
 }

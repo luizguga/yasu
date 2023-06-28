@@ -43,9 +43,8 @@ function janela(){
 
     let secao = document.createElement('section');
     secao.setAttribute('class', 'mensagem');
-    secao.style.width = '70vw';
+    secao.style.width = '90vw';
     secao.style.textAlign = 'center';
-    secao.style.marginTop = '120px';
     divDentro.appendChild(secao);
 
     let para1 = document.createElement('p');
