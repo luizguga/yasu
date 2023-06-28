@@ -8,37 +8,36 @@
 }
 html, body {
     color: white;
-    height: 100vh;
     font-family: 'Emilys Candy', cursive;
     background-image: linear-gradient(to bottom, var(--roxo-escuro-2), var(--roxo-escuro-1));
+    background-attachment: fixed;
+    height: 100vh;
 }
 
 :root {
     --roxo-base: #7201b5;
     --roxo-claro: #903CC1;
-    --roxo-escuro-1: #530182;
+    --roxo-escuro-1: #540183;
     --roxo-escuro-2: #281136;
     --roxo-escuro-3: #220136;
 }
 
 .container {
     display: grid;
-    grid-template-rows: 15vh 85vh;
+    grid-template-rows: 10vh 90vh;
     box-sizing: border-box;
-    background-image: linear-gradient(to bottom, var(--roxo-escuro-2), var(--roxo-escuro-1));
     max-width: 900px;
     margin: auto;
 }
 
 .cabecalho {
     display: flex;
-    height: 15vh;
     justify-content: center;
     align-items: center;
 }
 
 .cabecalho h1 {
-    font-size: 2em;
+    font-size: 1.7em;
     font-weight: bolder;
 }
 
@@ -46,8 +45,7 @@ html, body {
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 100%;
+    align-items: end;
 }
 
 .base {
@@ -74,18 +72,7 @@ html, body {
     display: block;
     box-sizing: border-box;
 	animation: animacao-cat 3s infinite ease-out;
-    width: 80%;
-}
-
-.base-pato {
-    position: absolute;
-    bottom: 10px;
-    width: 120px;
-}
-
-img.pato-a {
-    left: 0;
-    animation: animacao-pato 1s infinite linear;
+    width: 320px;
 }
 
 @keyframes animacao-cor {
@@ -105,20 +92,23 @@ img.pato-a {
     100% {transform: scale(.9);}
 }
 
-@media screen and (min-width: 575px){
+@media screen and (min-width: 375px){
+    .cabecalho h1 {
+        font-size: 2em;
+    }
     .gato {
-        width: 60%;
+        min-width: 375px;
     }
 }
 
-@media screen and (min-width: 770px) {
+@media screen and (min-width: 425px) {
     .gato {
-        width: 50%;
+        min-width: 425px;
     }
 }
 
-@media screen and (max-height: 480px) {
+@media screen and (min-width: 768px) {
     .gato {
-        width: 35%;
+        min-width: 500px;
     }
 }
