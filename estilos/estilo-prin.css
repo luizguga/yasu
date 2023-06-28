@@ -11,7 +11,7 @@ body {
     font-family: 'Emilys Candy', cursive;
     background-image: linear-gradient(to bottom, var(--roxo-escuro-2), var(--roxo-escuro-1));
     background-attachment: fixed;
-    height: 100%;
+    height: 100vh;
 }
 
 :root {
@@ -45,12 +45,12 @@ body {
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: end;
+    align-items: center;
 }
 
 .base {
     position: absolute;
-    top: 50%;
+    top: 40vh;
     width: 30px;
 }
 
