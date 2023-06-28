@@ -9,8 +9,8 @@ function janela(){
     div.style.position = 'absolute';
     div.style.top = '0';
     div.style.left = '0';
-    div.style.width = '100%';
-    div.style.height = '100%';
+    div.style.width = '100vw';
+    div.style.height = '100vh';
     div.style.backgroundColor = '#530182de';
     document.body.appendChild(div);
 
