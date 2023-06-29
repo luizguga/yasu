@@ -21,6 +21,7 @@ function janela(){
     divDentro.style.display = 'flex';
     divDentro.style.justifyContent = 'center';
     divDentro.style.alignItems = 'start';
+    divDentro.style.overflow = 'hidden';
     div.appendChild(divDentro);
 
     let imgPatoUm = document.createElement('img');
@@ -43,7 +44,6 @@ function janela(){
 
     let secao = document.createElement('section');
     secao.setAttribute('class', 'mensagem');
-    secao.style.width = '90vw';
     secao.style.textAlign = 'center';
     divDentro.appendChild(secao);
 

@@ -81,16 +81,17 @@ body {
 }
 
 .pato-a {
-    animation: animacao-pato-a 2.5s infinite linear;
+    animation: animacao-pato-a 2s infinite linear;
 }
 
 .pato-b {
-    animation: animacao-pato-b 2.5s infinite linear;
+    animation: animacao-pato-b 2s infinite linear;
 }
 
 .mensagem {
     margin-top: 120px;
     font-size: 1.7em;
+    width: 100vw;
 }
 
 @keyframes animacao-cor {
@@ -113,36 +114,46 @@ body {
 @keyframes animacao-pato-a {
     0% {
         transform: rotate(0deg) translate(0px, 0px);
+        left: 0;
     }
     25% {
         transform: rotate(5deg) translate(0px, 5px);
+        left: 25%;
     }
     50% {
         transform: rotate(0deg) translate(0px, 0px);
+        left: 50%;
     }
     75% {
         transform: rotate(-5deg) translate(0px, -5px);
+        left: 75%;
     }
     100% {
         transform: rotate(0deg) translate(0px, 0px);
+        left: 100%;
     }
 }
 
 @keyframes animacao-pato-b {
     0% {
         transform: rotate(0deg) translate(0px, 0px);
+        right: 0px - 200px;
     }
     25% {
         transform: rotate(-5deg) translate(0px, 5px);
+        right: 25%;
     }
     50% {
         transform: rotate(0deg) translate(0px, 0px);
+        right: 50%;
     }
     75% {
         transform: rotate(5deg) translate(0px, -5px);
+        right: 75%;
     }
     100% {
         transform: rotate(0deg) translate(0px, 0px);
+        right: 100%;
     }
 }
 
@@ -162,6 +173,7 @@ body {
     .mensagem {
         margin-top: 120px;
         font-size: 1.8em;
+        width: 100vw;
     }
 }
 
@@ -178,6 +190,7 @@ body {
     .mensagem {
         margin-top: 120px;
         font-size: 1.9em;
+        width: 95vw;
     }
 }
 
@@ -195,6 +208,7 @@ body {
     .mensagem {
         margin-top: 170px;
         font-size: 2em;
+        width: 90vw;
     }
 }
 
@@ -209,5 +223,6 @@ body {
     .mensagem {
         margin-top: 170px;
         font-size: 2.5em;
+        width: 85vw;
     }
 }
