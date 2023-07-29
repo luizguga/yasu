@@ -81,11 +81,11 @@ body {
 }
 
 .pato-a {
-    animation: animacao-pato-a 2s infinite linear;
+    animation: animacao-pato-a 3s infinite linear;
 }
 
 .pato-b {
-    animation: animacao-pato-b 2s infinite linear;
+    animation: animacao-pato-b 3s infinite linear;
 }
 
 .mensagem {
