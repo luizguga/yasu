@@ -6,49 +6,35 @@ for(let i=0; i<coracoes.length; i++){
 
 function janela(){
     let div = document.createElement('div');
-    div.style.position = 'absolute';
-    div.style.top = '0';
-    div.style.left = '0';
-    div.style.width = '100vw';
-    div.style.height = '100vh';
-    div.style.backgroundColor = '#530182de';
+    div.setAttribute('class', 'telaescondida');
     document.body.appendChild(div);
 
     let divDentro = document.createElement('div');
-    divDentro.style.position = 'relative';
-    divDentro.style.width = '100%';
-    divDentro.style.height = '100%';
-    divDentro.style.display = 'flex';
-    divDentro.style.justifyContent = 'center';
-    divDentro.style.alignItems = 'start';
-    divDentro.style.overflow = 'hidden';
+    divDentro.setAttribute('class', 'teladentro');
     div.appendChild(divDentro);
 
     let imgPatoUm = document.createElement('img');
     imgPatoUm.setAttribute('class', 'pato-a')
-    imgPatoUm.src = 'imagens/pato-1.png';
-    imgPatoUm.style.display = 'block';
-    imgPatoUm.style.position = 'absolute';
-    imgPatoUm.style.top = '0';
-    imgPatoUm.style.left = '0';
+    imgPatoUm.src = 'imagens/pato-1.png';;
     divDentro.appendChild(imgPatoUm);
 
     let imgPatoDois = document.createElement('img');
     imgPatoDois.setAttribute('class', 'pato-b');
     imgPatoDois.src = 'imagens/pato-2.png';
-    imgPatoDois.style.display = 'block';
-    imgPatoDois.style.position = 'absolute';
-    imgPatoDois.style.top = '0';
-    imgPatoDois.style.right = '0';
     divDentro.appendChild(imgPatoDois);
 
     let secao = document.createElement('section');
     secao.setAttribute('class', 'mensagem');
-    secao.style.textAlign = 'center';
-    divDentro.appendChild(secao);
+    div.appendChild(secao);
+
+    let h1 = document.createElement('h1');
+    h1.setAttribute('class', 'hmensagem')
+    h1.textContent = 'Parabéns Yasmin Christinne! Feliz Aniversário!';
+    secao.appendChild(h1);
 
     let para1 = document.createElement('p');
-    para1.textContent = 'Parabéns Yasmin Christinne! Feliz Aniversário!';
+    para1.setAttribute('class', 'pmensagem');
+    para1.textContent = 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias, excepturi repudiandae sint voluptate, ex nam, quaerat sit dicta nemo libero eveniet deserunt perferendis doloremque accusamus fuga. Repellat saepe illum a?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias, excepturi repudiandae sint voluptate, ex nam, quaerat sit dicta nemo libero eveniet deserunt perferendis doloremque accusamus fuga. Repellat saepe illum a?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias, excepturi repudiandae sint voluptate, ex nam, quaerat sit dicta nemo libero eveniet deserunt perferendis doloremque accusamus fuga. Repellat saepe illum a?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias, excepturi repudiandae sint voluptate, ex nam, quaerat sit dicta nemo libero eveniet deserunt perferendis doloremque accusamus fuga. Repellat saepe illum a?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias, excepturi repudiandae sint voluptate, ex nam, quaerat sit dicta nemo libero eveniet deserunt perferendis doloremque accusamus fuga. Repellat saepe illum a?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias, excepturi repudiandae sint voluptate, ex nam, quaerat sit dicta nemo libero eveniet deserunt perferendis doloremque accusamus fuga. Repellat saepe illum a?';
     secao.appendChild(para1);
 
 }
