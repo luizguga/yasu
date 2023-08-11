@@ -78,59 +78,7 @@ body {
     width: 320px;
 }
 
-.telaescondida {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    background-color: #530182de;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
-.teladentro {
-    position: relative;
-    width: 100%;
-    height: 120px;
-    overflow: hidden;
-}
-
-.pato-a, .pato-b {
-    width: 100px;
-    margin: 10px;
-    display: block;
-    position: absolute;
-    top: 0;
-}
-
-.pato-a {
-    animation: animacao-pato-a 3s infinite linear;
-    left: 0;
-}
-
-.pato-b {
-    animation: animacao-pato-b 3s infinite linear;
-    right: 0;
-}
-
-.mensagem {
-    font-size: 1.5em;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 0 20px;
-}
-
-.hmensagem {
-    text-align: center;
-}
-
-.pmensagem {
-    text-align: justify;
-    margin-top: 20px;
-    text-indent: 30px;
-}
 
 @keyframes animacao-cor {
     0% {
