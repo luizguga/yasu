@@ -23,7 +23,7 @@ function janela(){
     imgPatoDois.src = 'imagens/pato-2.png';
     divDentro.appendChild(imgPatoDois);
 
-    let secao = document.createElement('section');
+    let secao = document.createElement('div');
     secao.setAttribute('class', 'mensagem');
     div.appendChild(secao);
 
@@ -34,7 +34,7 @@ function janela(){
 
     let para1 = document.createElement('p');
     para1.setAttribute('class', 'pmensagem');
-    para1.textContent = 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias, excepturi repudiandae sint voluptate, ex nam, quaerat sit dicta nemo libero eveniet deserunt perferendis doloremque accusamus fuga. Repellat saepe illum a?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias, excepturi repudiandae sint voluptate, ex nam, quaerat sit dicta nemo libero eveniet deserunt perferendis doloremque accusamus fuga. Repellat saepe illum a?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias, excepturi repudiandae sint voluptate, ex nam, quaerat sit dicta nemo libero eveniet deserunt perferendis doloremque accusamus fuga. Repellat saepe illum a?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias, excepturi repudiandae sint voluptate, ex nam, quaerat sit dicta nemo libero eveniet deserunt perferendis doloremque accusamus fuga. Repellat saepe illum a?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias, excepturi repudiandae sint voluptate, ex nam, quaerat sit dicta nemo libero eveniet deserunt perferendis doloremque accusamus fuga. Repellat saepe illum a?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias, excepturi repudiandae sint voluptate, ex nam, quaerat sit dicta nemo libero eveniet deserunt perferendis doloremque accusamus fuga. Repellat saepe illum a?';
+    para1.textContent = '';
     secao.appendChild(para1);
 
 }

@@ -5,13 +5,14 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body {
     color: white;
     font-family: 'Emilys Candy', cursive;
     background-image: linear-gradient(to bottom, var(--roxo-escuro-2), var(--roxo-escuro-1));
     background-attachment: fixed;
-    height: 100vh;
+    min-height: 100vh;
     overflow-x: hidden;
 }
 
@@ -26,7 +27,6 @@ body {
 .container {
     display: grid;
     grid-template-rows: 10vh 90vh;
-    box-sizing: border-box;
     max-width: 320px;
     margin: auto;
 }
@@ -71,7 +71,6 @@ body {
 
 .gato {
     display: block;
-    box-sizing: border-box;
 	animation: animacao-cat 3s infinite ease-out;
     width: 320px;
 }
@@ -82,7 +81,10 @@ body {
     left: 0;
     width: 100vw;
     background-color: #530182de;
-    box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .teladentro {
@@ -90,7 +92,6 @@ body {
     width: 100%;
     height: 120px;
     overflow: hidden;
-    box-sizing: border-box;
 }
 
 .pato-a, .pato-b {
@@ -112,15 +113,10 @@ body {
 }
 
 .mensagem {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: start;
     font-size: 1.5em;
-    padding: 0 20px 20px 20px;
-    margin: 10px auto 0 auto;
     width: 100%;
     box-sizing: border-box;
+    padding: 0 20px;
 }
 
 .hmensagem {
@@ -271,22 +267,11 @@ body {
         width: 150px;
         margin: 20px;
     }
-    .telaescondida {
-        height: 100vh;
-    }
     .mensagem {
         font-size: 1.4em;
         max-width: 900px;
     }
 }
-
 ::-webkit-scrollbar {
-    background-color: var(--roxo-escuro-1);
-    width: 13px;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: var(--roxo-escuro-2);
-    border-radius: 13px;
-    border: 2px solid var(--roxo-escuro-1);
+    display: none;
 }
