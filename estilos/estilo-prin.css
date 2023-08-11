@@ -25,16 +25,19 @@ body {
 }
 
 .container {
-    display: grid;
-    grid-template-rows: 10vh 90vh;
-    max-width: 320px;
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 100%;
+    max-width: 900px;
 }
 
 .cabecalho {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
 
 .cabecalho h1 {
@@ -51,7 +54,7 @@ body {
 
 .base {
     position: absolute;
-    top: 40vh;
+    top: 30vh;
     width: 30px;
 }
 
@@ -134,7 +137,7 @@ body {
         display: block;
     }
     100% {
-        top: 0;
+        top: -20px;
         transform: scale(2);
         display: none;
     }
@@ -196,6 +199,9 @@ body {
     .teladentro {
         height: 110px;
     }
+    .base {
+        top: 20vh;
+    }
     .mensagem {
         font-size: 0.9em;
     }
@@ -204,9 +210,6 @@ body {
 @media screen and (min-width: 375px){
     .cabecalho h1 {
         font-size: 2em;
-    }
-    .container {
-        min-width: 375px;
     }
     .gato {
         min-width: 375px;
@@ -223,9 +226,6 @@ body {
 }
 
 @media screen and (min-width: 425px) {
-    .container {
-        min-width: 425px;
-    }
     .gato {
         min-width: 425px;
     }
@@ -241,9 +241,6 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-    .container {
-        min-width: 768px;
-    }
     .gato {
         min-width: 500px;
     }
@@ -260,9 +257,6 @@ body {
 }
 
 @media screen and (min-width:900px){
-    .container {
-        max-width: 900px;
-    }
     .pato-a, .pato-b {
         width: 150px;
         margin: 20px;
@@ -271,7 +265,4 @@ body {
         font-size: 1.4em;
         max-width: 900px;
     }
-}
-::-webkit-scrollbar {
-    display: none;
 }
