@@ -41,6 +41,7 @@
     font-size: 1.5em;
     width: 100%;
     box-sizing: border-box;
+    padding: 0 20px 20px;
 }
 
 .hmensagem {
@@ -51,4 +52,51 @@
     text-align: justify;
     margin-top: 20px;
     text-indent: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes animacao-pato-a {
+    0% {
+        transform: rotate(0deg) translate(0px, 0px);
+        left: 0;
+    }
+    25% {
+        transform: rotate(5deg) translate(0px, 5px);
+        left: 25%;
+    }
+    50% {
+        transform: rotate(0deg) translate(0px, 0px);
+        left: 50%;
+    }
+    75% {
+        transform: rotate(-5deg) translate(0px, -5px);
+        left: 75%;
+    }
+    100% {
+        transform: rotate(0deg) translate(0px, 0px);
+        left: 100%;
+    }
+}
+
+@keyframes animacao-pato-b {
+    0% {
+        transform: rotate(0deg) translate(0px, 0px);
+        right: 0px - 200px;
+    }
+    25% {
+        transform: rotate(-5deg) translate(0px, 5px);
+        right: 25%;
+    }
+    50% {
+        transform: rotate(0deg) translate(0px, 0px);
+        right: 50%;
+    }
+    75% {
+        transform: rotate(5deg) translate(0px, -5px);
+        right: 75%;
+    }
+    100% {
+        transform: rotate(0deg) translate(0px, 0px);
+        right: 100%;
+    }
 }

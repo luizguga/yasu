@@ -97,52 +97,6 @@ body {
     100% {transform: scale(.9);}
 }
 
-@keyframes animacao-pato-a {
-    0% {
-        transform: rotate(0deg) translate(0px, 0px);
-        left: 0;
-    }
-    25% {
-        transform: rotate(5deg) translate(0px, 5px);
-        left: 25%;
-    }
-    50% {
-        transform: rotate(0deg) translate(0px, 0px);
-        left: 50%;
-    }
-    75% {
-        transform: rotate(-5deg) translate(0px, -5px);
-        left: 75%;
-    }
-    100% {
-        transform: rotate(0deg) translate(0px, 0px);
-        left: 100%;
-    }
-}
-
-@keyframes animacao-pato-b {
-    0% {
-        transform: rotate(0deg) translate(0px, 0px);
-        right: 0px - 200px;
-    }
-    25% {
-        transform: rotate(-5deg) translate(0px, 5px);
-        right: 25%;
-    }
-    50% {
-        transform: rotate(0deg) translate(0px, 0px);
-        right: 50%;
-    }
-    75% {
-        transform: rotate(5deg) translate(0px, -5px);
-        right: 75%;
-    }
-    100% {
-        transform: rotate(0deg) translate(0px, 0px);
-        right: 100%;
-    }
-}
-
 @media screen and (min-width: 320px){
     .teladentro {
         height: 110px;
