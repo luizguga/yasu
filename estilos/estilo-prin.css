@@ -103,7 +103,7 @@ body {
     left: 0;
     width: 100%;
     background-color: #530182de;
-    min-height: 100vh;
+    min-height: 100%;
     display: none;
     flex-direction: column;
     align-items: center;
@@ -116,7 +116,7 @@ body {
     overflow: hidden;
 }
 
-.pato-a, .pato-b {
+.pato {
     width: 100px;
     margin: 10px;
     display: block;
@@ -125,13 +125,19 @@ body {
 }
 
 .pato-a {
-    animation: animacao-pato-a 3s infinite linear;
-    left: 0;
+    left: 100%;
 }
 
 .pato-b {
-    animation: animacao-pato-b 3s infinite linear;
-    right: 0;
+    right: 100%;
+}
+
+.animacao-p1 {
+    animation: animacao-pato-a 2.5s linear;
+}
+
+.animacao-p2 {
+    animation: animacao-pato-b 2.5s linear;
 }
 
 .mensagem {
@@ -178,7 +184,7 @@ body {
 @keyframes animacao-pato-b {
     0% {
         transform: rotate(0deg) translate(0px, 0px);
-        right: 0px - 200px;
+        right: 0;
     }
     25% {
         transform: rotate(-5deg) translate(0px, 5px);
@@ -220,7 +226,7 @@ body {
     .teladentro {
         height: 110px;
     }
-    .pato-a, .pato-b {
+    .pato {
         width: 100px;
     }
     .mensagem {
@@ -235,7 +241,7 @@ body {
     .teladentro {
         height: 110px;
     }
-    .pato-a, .pato-b {
+    .pato {
         width: 100px;
     }
     .mensagem {
@@ -250,7 +256,7 @@ body {
     .teladentro {
         height: 170px;
     }
-    .pato-a, .pato-b {
+    .pato {
         width: 150px;
         margin: 20px;
     }
@@ -260,7 +266,7 @@ body {
 }
 
 @media screen and (min-width:900px){
-    .pato-a, .pato-b {
+    .pato {
         width: 150px;
         margin: 20px;
     }
