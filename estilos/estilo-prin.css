@@ -233,6 +233,10 @@ body {
     .mensagem {
         font-size: 1em;
     }
+    .hmensagem {
+        font-size: 1.8em;
+        padding: 0 5px;
+    }
 }
 
 @media screen and (min-width: 425px) {
