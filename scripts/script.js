@@ -6,6 +6,7 @@ for(let i=0; i<coracoes.length; i++){
 }
 
 const patos = document.querySelectorAll('img.pato');
+const saida = document.querySelector('.sair');
 
 let controle = true;
 
@@ -43,5 +44,4 @@ function fecharJanela() {
     controle = true;
 }
 
-patos[0].addEventListener('click', ()=>{fecharJanela()});
-patos[1].addEventListener('click', ()=>{fecharJanela()});
+saida.addEventListener('click', ()=>{fecharJanela()});
