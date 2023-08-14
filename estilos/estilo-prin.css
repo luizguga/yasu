@@ -39,7 +39,7 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    margin-bottom: 15vh;
+    margin-bottom: 17vh;
 }
 
 .cabecalho h1 {
@@ -85,7 +85,7 @@ body {
         display: block;
     }
     100% {
-        top: -50px;
+        top: -80px;
         transform: scale(2);
         display: none;
     }
@@ -161,19 +161,22 @@ body {
 
 @keyframes animacao-pato-a {
     0% {
+        left: -25%;
+    }
+    20% {
         transform: rotate(0deg) translate(0px, 0px);
         left: 0;
     }
-    25% {
-        transform: rotate(5deg) translate(0px, 5px);
+    40% {
+        transform: rotate(3deg) translate(0px, 2px);
         left: 25%;
     }
-    50% {
+    60% {
         transform: rotate(0deg) translate(0px, 0px);
         left: 50%;
     }
-    75% {
-        transform: rotate(-5deg) translate(0px, -5px);
+    80% {
+        transform: rotate(-3deg) translate(0px, -2px);
         left: 75%;
     }
     100% {
@@ -184,19 +187,22 @@ body {
 
 @keyframes animacao-pato-b {
     0% {
-        transform: rotate(0deg) translate(0px, 0px);
-        right: 0;
+        right: -25%;
     }
-    25% {
-        transform: rotate(-5deg) translate(0px, 5px);
+    20% {
+        transform: rotate(0deg) translate(0px, 0px);
+        right: 0%;
+    }
+    40% {
+        transform: rotate(-3deg) translate(0px, 2px);
         right: 25%;
     }
-    50% {
+    60% {
         transform: rotate(0deg) translate(0px, 0px);
         right: 50%;
     }
-    75% {
-        transform: rotate(5deg) translate(0px, -5px);
+    80% {
+        transform: rotate(3deg) translate(0px, -2px);
         right: 75%;
     }
     100% {
