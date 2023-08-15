@@ -23,14 +23,14 @@ const loop = () => {
                 setTimeout(()=>{
                     patos[0].classList.remove('animacao-p1');
                     controle = false;
-                },3000);
+                },4000);
             break;
             case false:
                 patos[1].classList.add('animacao-p2');
                 setTimeout(()=>{
                     patos[1].classList.remove('animacao-p2');
                     controle = true;
-                },3000);
+                },4000);
             break;
         }
     },500);
@@ -45,3 +45,17 @@ function fecharJanela() {
 }
 
 saida.addEventListener('click', ()=>{fecharJanela()});
+
+const gato = document.querySelector('img.gato');
+
+gato.addEventListener('click', ()=>{
+    const audioGato = new Audio('../audio/audio.mp3');
+    audioGato.play()
+});
+
+for(let pato of patos){
+    pato.addEventListener('click', ()=>{
+        const audioPato = new Audio('../audio/audio.mp3');
+        audioPato.play();
+    });
+}

@@ -58,6 +58,7 @@ body {
     position: absolute;
     top: 30vh;
     width: 30px;
+    cursor: pointer;
 }
 
 .coracao-a {
@@ -78,6 +79,7 @@ body {
     display: block;
 	animation: animacao-cat 3s infinite ease-out;
     width: 320px;
+    cursor: pointer;
 }
 
 @keyframes animacao-cor {
@@ -122,6 +124,7 @@ body {
     display: block;
     position: absolute;
     top: 0;
+    cursor: pointer;
 }
 
 .pato-a {
@@ -133,11 +136,11 @@ body {
 }
 
 .animacao-p1 {
-    animation: animacao-pato-a 2.5s linear;
+    animation: animacao-pato-a 3s linear;
 }
 
 .animacao-p2 {
-    animation: animacao-pato-b 2.5s linear;
+    animation: animacao-pato-b 3s linear;
 }
 
 .mensagem {
@@ -176,6 +179,10 @@ body {
 
 .sair:hover {
     color: var(--roxo-claro);
+}
+
+.audios {
+    display: none;
 }
 
 @keyframes animacao-pato-a {
@@ -289,6 +296,12 @@ body {
     .pato {
         width: 150px;
         margin: 20px;
+    }
+    .animacao-p1 {
+        animation: animacao-pato-a 4s linear;
+    }
+    .animacao-p2 {
+        animation: animacao-pato-b 4s linear;
     }
     .mensagem {
         font-size: 1.3em;
