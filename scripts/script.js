@@ -50,21 +50,23 @@ const gato = document.querySelector('img.gato');
 const secaoImg = document.querySelector('.img');
 const telaDentro = document.querySelector('.teladentro');
 
-gato.addEventListener('click', ()=>{
-    const audioGato = document.createElement('audio');
-    audioGato.setAttribute('controls','');
-    audioGato.setAttribute('autoplay','');
-    audioGato.setAttribute('class', 'audios');
-    audioGato.setAttribute('id', 'audio-gato');
-    audioGato.src = 'audio/audio.mp3';
-    secaoImg.appendChild(audioGato);
+const reproduzirAudio = (caminho, parent) => {
+    const audio = document.createElement('audio');
+    audio.setAttribute('controls','');
+    audio.setAttribute('autoplay','');
+    audio.setAttribute('class', 'audios');
+    audio.src = caminho;
+    parent.appendChild(audio);
 
     setTimeout(()=>{
-        secaoImg.removeChild(document.querySelector('#audio-gato'));
+        parent.removeChild(audio);
     }, 1000);
+}
+
+gato.addEventListener('click', ()=>{
+    reproduzirAudio('audio/audio.mp3', secaoImg);
 });
 
 telaDentro.addEventListener('click', ()=>{
-    const audioPato = new Audio('../audio/audio.mp3');
-    audioPato.play();
+    reproduzirAudio('audio/audio.mp3', telaDentro);
 });
