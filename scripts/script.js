@@ -53,9 +53,10 @@ gato.addEventListener('click', ()=>{
     audioGato.play()
 });
 
-for(let pato of patos){
-    pato.addEventListener('click', ()=>{
-        const audioPato = new Audio('../audio/audio.mp3');
-        audioPato.play();
-    });
-}
+const telaDentro = document.querySelector('.teladentro');
+
+
+telaDentro.addEventListener('click', ()=>{
+    const audioPato = new Audio('../audio/audio.mp3');
+    audioPato.play();
+});
