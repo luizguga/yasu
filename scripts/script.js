@@ -47,14 +47,22 @@ function fecharJanela() {
 saida.addEventListener('click', ()=>{fecharJanela()});
 
 const gato = document.querySelector('img.gato');
-
-gato.addEventListener('click', ()=>{
-    const audioGato = new Audio('../audio/audio.mp3');
-    audioGato.play()
-});
-
+const secaoImg = document.querySelector('.img');
 const telaDentro = document.querySelector('.teladentro');
 
+gato.addEventListener('click', ()=>{
+    const audioGato = document.createElement('audio');
+    audioGato.setAttribute('controls','');
+    audioGato.setAttribute('autoplay','');
+    audioGato.setAttribute('class', 'audios');
+    audioGato.setAttribute('id', 'audio-gato');
+    audioGato.src = 'audio/audio.mp3';
+    secaoImg.appendChild(audioGato);
+
+    setTimeout(()=>{
+        secaoImg.removeChild(document.querySelector('#audio-gato'));
+    }, 1000);
+});
 
 telaDentro.addEventListener('click', ()=>{
     const audioPato = new Audio('../audio/audio.mp3');
