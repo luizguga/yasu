@@ -39,7 +39,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 10vh;
+    height: 9vh;
+    padding-top: 1vh;
 }
 
 .cabecalho h1 {
@@ -60,7 +61,7 @@ body {
 .base {
     position: absolute;
     display: block;
-    top: 40vh;
+    top: 37vh;
     width: 30px;
     cursor: pointer;
 }
