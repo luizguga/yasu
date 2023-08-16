@@ -65,7 +65,7 @@ const reproduzirAudio = (caminho, parent, time) => {
 }
 
 gato.addEventListener('click', ()=>{
-    reproduzirAudio('audio/gato.mp3', secaoImg, 1830);
+    reproduzirAudio('audio/gato.mp3', secaoImg, 2000);
 });
 
 
