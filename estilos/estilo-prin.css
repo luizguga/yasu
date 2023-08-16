@@ -253,7 +253,7 @@ body {
         font-size: 2em;
     }
     .gato {
-        min-width: 375px;
+        width: 375px;
     }
     .teladentro {
         height: 110px;
@@ -272,7 +272,7 @@ body {
 
 @media screen and (min-width: 425px) {
     .gato {
-        min-width: 425px;
+        width: 400px;
     }
     .teladentro {
         height: 110px;
@@ -293,7 +293,7 @@ body {
 
 @media screen and (min-width: 768px) {
     .gato {
-        min-width: 450px;
+        width: 425px;
     }
     .teladentro {
         height: 170px;
@@ -314,6 +314,9 @@ body {
 }
 
 @media screen and (min-width:900px){
+    .gato {
+        width: 450px;
+    }
     .pato {
         width: 150px;
         margin: 20px;
