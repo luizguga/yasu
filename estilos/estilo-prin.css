@@ -60,7 +60,7 @@ body {
 .base {
     position: absolute;
     display: block;
-    top: 35vh;
+    top: 40vh;
     width: 30px;
     cursor: pointer;
 }
@@ -86,7 +86,7 @@ body {
     cursor: pointer;
 }
 
-@keyframes animacao-cor {
+@keyframes -animacao-cor {
     100% {
         top: 15px;
         transform: scale(2);
