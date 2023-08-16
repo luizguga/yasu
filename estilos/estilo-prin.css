@@ -86,7 +86,7 @@ body {
     cursor: pointer;
 }
 
-@keyframes -animacao-cor {
+@keyframes animacao-cor {
     100% {
         top: 15px;
         transform: scale(2);
