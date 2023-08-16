@@ -23,14 +23,14 @@ const loop = () => {
                 setTimeout(()=>{
                     patos[0].classList.remove('animacao-p1');
                     controle = false;
-                },4000);
+                },6000);
             break;
             case false:
                 patos[1].classList.add('animacao-p2');
                 setTimeout(()=>{
                     patos[1].classList.remove('animacao-p2');
                     controle = true;
-                },4000);
+                },6000);
             break;
         }
     },500);
@@ -54,6 +54,7 @@ const reproduzirAudio = (caminho, parent, time) => {
     const audio = document.createElement('audio');
     audio.setAttribute('controls','');
     audio.setAttribute('autoplay','');
+    audio.setAttribute('loop', '');
     audio.setAttribute('class', 'audios');
     audio.src = caminho;
     parent.appendChild(audio);
@@ -67,6 +68,9 @@ gato.addEventListener('click', ()=>{
     reproduzirAudio('audio/gato.mp3', secaoImg, 1830);
 });
 
-telaDentro.addEventListener('click', ()=>{
-    reproduzirAudio('audio/pato.m4a', telaDentro, 700);
-});
+
+for(const pato of patos){
+    pato.addEventListener('click', ()=>{
+        reproduzirAudio('audio/pato.m4a', telaDentro, 700);
+    });
+}

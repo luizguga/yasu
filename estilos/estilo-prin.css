@@ -284,6 +284,12 @@ body {
     .mensagem {
         font-size: 1.2em;
     }
+    .animacao-p1 {
+        animation: animacao-pato-a 4s linear;
+    }
+    .animacao-p2 {
+        animation: animacao-pato-b 4s linear;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -316,6 +322,12 @@ body {
     .mensagem {
         font-size: 1.4em;
         max-width: 900px;
+    }
+    .animacao-p1 {
+        animation: animacao-pato-a 6s linear;
+    }
+    .animacao-p2 {
+        animation: animacao-pato-b 6s linear;
     }
 }
 
