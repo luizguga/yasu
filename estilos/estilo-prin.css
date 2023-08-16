@@ -29,6 +29,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: start;
     min-width: 100%;
     max-width: 900px;
     min-height: 100vh;
@@ -38,8 +39,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
-    margin-bottom: 17vh;
+    height: 10vh;
 }
 
 .cabecalho h1 {
@@ -50,14 +50,17 @@ body {
 .img {
     position: relative;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: end;
     align-items: center;
+    min-height: 65vh;
+    padding-top: 15vh;
 }
 
 .base {
     position: absolute;
     display: block;
-    top: 30vh;
+    top: 35vh;
     width: 30px;
     cursor: pointer;
 }
@@ -85,7 +88,7 @@ body {
 
 @keyframes animacao-cor {
     100% {
-        top: -80px;
+        top: 15px;
         transform: scale(2);
         display: none;
     }
@@ -238,9 +241,6 @@ body {
 @media screen and (min-width: 320px){
     .teladentro {
         height: 110px;
-    }
-    .base {
-        top: 20vh;
     }
     .mensagem {
         font-size: 0.9em;
