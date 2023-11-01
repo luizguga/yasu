@@ -6,7 +6,7 @@ for(let i=0; i<coracoes.length; i++){
 }
 
 const patos = document.querySelectorAll('img.pato');
-const saida = document.querySelector('.sair');
+const saida = document.querySelector('.btn-sair');
 
 let controle = true;
 
@@ -50,12 +50,13 @@ const gato = document.querySelector('img.gato');
 const secaoImg = document.querySelector('.img');
 const telaDentro = document.querySelector('.teladentro');
 
-const reproduzirAudio = (caminho, parent, time) => {
+const reproduzirAudio = (caminho, parent, time, type) => {
     const audio = document.createElement('audio');
     audio.setAttribute('controls','');
     audio.setAttribute('autoplay','');
     audio.setAttribute('loop', '');
     audio.setAttribute('class', 'audios');
+    audio.setAttribute('type', type);
     audio.src = caminho;
     parent.appendChild(audio);
 
@@ -65,12 +66,12 @@ const reproduzirAudio = (caminho, parent, time) => {
 }
 
 gato.addEventListener('click', ()=>{
-    reproduzirAudio('audio/gato.mp3', secaoImg, 2000);
+    reproduzirAudio('audio/gato.mp3', secaoImg, 2000, 'audio/mp3');
 });
 
 
 for(const pato of patos){
     pato.addEventListener('click', ()=>{
-        reproduzirAudio('audio/pato.m4a', telaDentro, 700);
+        reproduzirAudio('audio/pato.m4a', telaDentro, 700, 'audio/mp4');
     });
 }
